@@ -1,0 +1,116 @@
+/* --- Reset & Global Styles --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: #ffffff;
+  background-color: #111;
+}
+
+/* --- Hero Banner Section --- */
+.hero-banner {
+  width: 100%;
+  min-height: 100vh; /* Takes full viewport height */
+
+  /* Background Image + Dark Linear Gradient Overlay */
+  background-image: 
+    linear-gradient(rgba(15, 23, 42, 0.65), rgba(15, 23, 42, 0.75)),
+    url('./media/background.avif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* Centering content using Flexbox */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* Inner spacing so text doesn't hit screen edges on mobile */
+  padding: 40px 20px;
+}
+
+/* --- Hero Inner Content Block --- */
+.hero-content {
+  max-width: 750px;
+  text-align: center;
+}
+
+/* --- Subtitle --- */
+.hero-subtitle {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 3px;
+  color: #38bdf8; /* Accent light blue color */
+  text-transform: uppercase;
+  margin-bottom: 15px; /* Margin pushes the H1 title down */
+}
+
+/* --- Main Heading --- */
+.hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+  margin-bottom: 20px; /* Margin separates title from paragraph */
+}
+
+/* --- Paragraph Description --- */
+.hero-description {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #cbd5e1;
+  max-width: 600px;
+  margin: 0 auto 35px auto; /* Centers p and pushes buttons down */
+}
+
+/* --- Button Group Container --- */
+.button-group {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap; /* Allows buttons to stack neatly on mobile screens */
+}
+
+/* --- Common Button Base Styles --- */
+.btn {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 14px 32px; /* Inner spacing creates button size */
+  border-radius: 50px; /* Rounded pill shape */
+  transition: all 0.3s ease;
+  cursor: pointer;
+  display: inline-block;
+}
+
+/* Primary Button (Filled) */
+.btn-primary {
+  background-color: #0284c7;
+  color: #ffffff;
+  border: 2px solid #0284c7;
+}
+
+.btn-primary:hover {
+  background-color: #0369a1;
+  border-color: #0369a1;
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Secondary Button (Outlined) */
+.btn-secondary {
+  background-color: transparent;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+}
+
+.btn-secondary:hover {
+  background-color: #ffffff;
+  color: #0f172a;
+  transform: translateY(-2px);
+}
