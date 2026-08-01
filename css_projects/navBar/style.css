@@ -1,0 +1,80 @@
+@font-face {
+    font-family: apple;
+    src: url(./media/sf-pro-text_bold.woff2);
+}
+
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+html,body{
+height: 100%;
+width : 100%;
+}
+
+#main{
+    height: 100%;
+    width : 100%;
+    background-color: white;
+}
+
+
+#nav{
+    height : 80px;
+    width:100%;
+    background-color: rgb(41, 40, 40);
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+}
+
+#nav h4{
+    color: white;
+    font-weight: 300;
+}
+
+#center {
+    height: 80%;
+    width: 100%;
+    background-color: black;
+    text-align : center;
+    padding : 50px;
+    background-image: url(./media/iphone_bgc.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#center h1{
+    color: black;
+    font-size: 60px;
+    font-weight: 600;
+    font-family: apple;
+}
+
+#center h5{
+    color: black;
+    font-size: 40px;
+    font-weight: 300;
+}
+
+
+#link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:30px;
+    gap : 30px;
+}
+
+#link button{
+    background-color: royalblue;
+    color: white;
+    padding : 13px 30px;
+    border-radius: 50px;
+    font-size: 20px;
+    border : none;
+}
