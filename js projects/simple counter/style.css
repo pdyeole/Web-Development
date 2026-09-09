@@ -1,0 +1,102 @@
+:root{
+    --bg-color: #0f172a;
+    --card-bg : #1e293b;
+    --text-primary : #f8fafc;
+    --text-secondary : #94a3b8;
+    --accent-inc : #10b981;
+    --accent-inc-hover: #059669;
+    --accent-dec: #ef4444;
+    --accent-dec-hover: #dc2626;
+    --radius: 16px;
+}
+
+
+*{
+    margin : 0;
+    padding:0;
+    box-sizing : border-box;
+}
+
+body{
+    min-height: 100vh;
+    font-family : system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.counter-card{
+    background-color: var(--card-bg);
+    padding : 2.5rem 3rem;
+    border-radius: var(--radius);    
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 8px 10px -6px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width : 100%;
+    max-width: 360px;
+    border : 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.title{
+    font-size : 1.75rem;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    color : var(--text-primary);
+    margin-bottom: 1.5rem;
+}
+
+.count-display{
+    font-size: 5rem;
+    font-weight: 800;
+    color : var(--text-primary);
+    margin-bottom: 2rem;
+    line-height : 1;
+    font-variant-numeric: tabular-nums;
+}
+
+.btn-grp{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.btn{
+    flex:1;
+    font-size : 1.75rem;
+    font-weight: 600;
+    padding: 0.75rem 0;
+    border: none;
+    border-radius: calc(var(--radius)/2);
+    cursor : pointer;
+    color : #ffffff;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn:active{
+    transform: scale(0.96);
+}
+
+.btn-decrement{
+    background-color: var(--accent-dec);
+}
+
+.btn-decrement:hover{
+    background-color: var(--accent-dec-hover);
+}
+
+.btn-increment{
+    background-color: var(--accent-inc);
+}
+
+.btn-increment:hover{
+    background-color: var(--accent-inc-hover);
+}
+
+#notify{
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: var(--text-secondary);
+    
+}
