@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: #363333;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    height: 500px;
+    width: 400px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    user-select: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.card h2 {
+    font-size: 40px;
+    text-align: center;
+}
+
+/* Double-click heart animation */
+.heart {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: rgb(238, 68, 68);
+    font-size: 50px;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0) rotate(-90deg);
+    transition: all cubic-bezier(.46,1.63,.55,1.47) 0.5s;
+    pointer-events: none;
+}
+
+
+.media-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 35px;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0);
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
