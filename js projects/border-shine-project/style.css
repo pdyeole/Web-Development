@@ -49,10 +49,21 @@ body{
     background:
     linear-gradient(black) content-box,
     conic-gradient(from var(--rotate),black,rgb(255, 0, 135),black) border-box;
-     animation : borderAnimate 3s;
+     animation : borderAnimate 1s;
     animation-iteration-count: infinite;
+    animation-play-state: paused;
+    text-shadow: 0 0 0px rgb(255, 0, 135);
+    border-width:0px;
+
+    transition : all 0.3 ease-in-out;
 }
 
+.box:hover{
+    border-width: 5px;
+    animation-play-state: running;
+    color: rgb(136, 25, 112);
+    text-shadow: 0 0 10px rgb(255, 0, 135);
+}
 
 .box img{
     width: 100%;
