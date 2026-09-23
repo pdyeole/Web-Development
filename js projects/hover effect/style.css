@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width : 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* gap:20px; */
+    anchor-name: --some-other-anchor;
+}
+
+.box{
+    height: 200px;
+    width : 200px;
+}
+
+.box:hover{
+    anchor-name: --some-other-anchor;
+}
+
+.red{
+    background-color: red;
+    
+}
+
+.blue{
+    background-color: blue;
+    
+}
+
+.green{
+    background-color: green;
+}
+
+
+.anchor{
+    background-color: #b9b9b9;
+    /* border-radius: 10px; */
+    position : absolute;
+    position-anchor: --some-other-anchor;
+    
+    top: anchor(top);
+    left : anchor(left);
+    bottom: anchor(bottom);
+    right: anchor(right);
+    pointer-events: none;
+    transition: all 0.3s linear;
+    mix-blend-mode: exclusion;
+}
